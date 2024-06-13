@@ -1,95 +1,111 @@
 /* Add styles here */
 /* Add styles here */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #8b0000; /* Warna merah gelap untuk latar belakang */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #8b0000; /* Warna merah gelap untuk latar belakang */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  .main-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
+/* Media query untuk perangkat dengan lebar layar <= 768px (tablet) */
+@media (max-width: 768px) {
   .container {
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-
-  h1 {
-    color: #8b0000; /* Teks putih untuk judul */
-    font-size: 53px;
-    margin-bottom: 20px;
-    font-family: 'Chiller', sans-serif;   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  label {
-    margin-bottom: 10px;
-    color: #555;
-  }
-  
-  input[type='text'] {
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 4px;
-    width: 100%;
-    max-width: 300px;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-weight: bold; /* Teks input nama menjadi tebal (bold) */
   }
-  
-  button {
-    margin-top: 10px;
-    padding: 12px 24px;
-    background-color: #8b0000; /* Warna merah gelap untuk tombol */
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #6a0000; /* Warna merah lebih gelap saat hover */
-  }
-  
-  #hasilCek {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #4d0000; /* Warna merah lebih gelap untuk area hasil cek */
-    border: 1px solid #8b0000; /* Garis tepi merah gelap */
-    border-radius: 8px;
-    color: #fff; /* Teks warna putih untuk kontras */
-    font-size: 18px;
-    text-align: center;
-  }
+}
 
-  footer {
-    background-color: #8b0000; /* Warna latar belakang footer (merah gelap) */
-    color: #fff; /* Warna teks putih untuk kontras */
-    padding: 10px 0; /* Padding atas dan bawah untuk ruang ekstra */
-    text-align: center; /* Pusatkan teks */
-    position: absolute; /* Mengatur posisi footer */
-    bottom: 0; /* Tempatkan footer di bagian bawah */
-    width: 100%; /* Lebar penuh */
+/* Media query untuk perangkat dengan lebar layar <= 480px (ponsel) */
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+    border-radius: 2px;
   }
+}
+
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #8b0000; /* Teks putih untuk judul */
+  font-size: 53px;
+  margin-bottom: 20px;
+  font-family: 'Chiller', sans-serif;   }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+input[type='text'] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold; /* Teks input nama menjadi tebal (bold) */
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background-color: #8b0000; /* Warna merah gelap untuk tombol */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a0000; /* Warna merah lebih gelap saat hover */
+}
+
+#hasilCek {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #4d0000; /* Warna merah lebih gelap untuk area hasil cek */
+  border: 1px solid #8b0000; /* Garis tepi merah gelap */
+  border-radius: 8px;
+  color: #fff; /* Teks warna putih untuk kontras */
+  font-size: 18px;
+  text-align: center;
+}
+
+footer {
+  background-color: #8b0000; /* Warna latar belakang footer (merah gelap) */
+  color: #fff; /* Warna teks putih untuk kontras */
+  padding: 10px 0; /* Padding atas dan bawah untuk ruang ekstra */
+  text-align: center; /* Pusatkan teks */
+  position: absolute; /* Mengatur posisi footer */
+  bottom: 0; /* Tempatkan footer di bagian bawah */
+  width: 100%; /* Lebar penuh */
+}
