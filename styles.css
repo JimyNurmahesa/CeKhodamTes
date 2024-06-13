@@ -1,39 +1,22 @@
 /* Add styles here */
-/* Add styles here */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #8b0000; /* Warna merah gelap untuk latar belakang */
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
-
-
-/* Media query untuk perangkat dengan lebar layar <= 768px (tablet) */
-@media (max-width: 768px) {
-  .container {
-    padding: 10px;
-    border-radius: 4px;
-  }
-}
-
-/* Media query untuk perangkat dengan lebar layar <= 480px (ponsel) */
-@media (max-width: 480px) {
-  .container {
-    padding: 5px;
-    border-radius: 2px;
-  }
-}
-
 
 .main-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px; /* Tambahkan padding untuk ruang di sekitar kontainer utama */
 }
 
 .container {
@@ -47,10 +30,11 @@ body {
 }
 
 h1 {
-  color: #8b0000; /* Teks putih untuk judul */
-  font-size: 53px;
+  color: #8b0000; /* Teks merah gelap untuk judul */
+  font-size: 2em; /* Gunakan unit relatif untuk ukuran font */
   margin-bottom: 20px;
-  font-family: 'Chiller', sans-serif;   }
+  font-family: 'Chiller', sans-serif;
+}
 
 form {
   display: flex;
@@ -74,8 +58,13 @@ input[type='text'] {
   font-weight: bold; /* Teks input nama menjadi tebal (bold) */
 }
 
-button {
+.button-container {
+  display: flex;
+  gap: 10px; /* Jarak antara tombol */
   margin-top: 10px;
+}
+
+button {
   padding: 12px 24px;
   background-color: #8b0000; /* Warna merah gelap untuk tombol */
   color: #fff;
@@ -105,7 +94,55 @@ footer {
   color: #fff; /* Warna teks putih untuk kontras */
   padding: 10px 0; /* Padding atas dan bawah untuk ruang ekstra */
   text-align: center; /* Pusatkan teks */
-  position: absolute; /* Mengatur posisi footer */
-  bottom: 0; /* Tempatkan footer di bagian bawah */
   width: 100%; /* Lebar penuh */
+  position: fixed; /* Tetapkan footer ke bagian bawah */
+  bottom: 0; /* Tempatkan footer di bagian bawah */
+}
+
+/* Media query untuk perangkat dengan lebar layar <= 768px (tablet) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    border-radius: 6px;
+  }
+
+  h1 {
+    font-size: 1.8em; /* Kurangi ukuran font untuk tablet */
+  }
+
+  input[type='text'] {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+
+  #hasilCek {
+    font-size: 16px;
+  }
+}
+
+/* Media query untuk perangkat dengan lebar layar <= 480px (ponsel) */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  h1 {
+    font-size: 1.5em; /* Kurangi ukuran font untuk ponsel */
+  }
+
+  input[type='text'] {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  #hasilCek {
+    font-size: 14px;
+  }
 }
