@@ -54,7 +54,7 @@ const dataKhodam = [
       const khodam = dataKhodam[randomIndex];
   
       // Tampilkan hasil cek
-      hasilCek.innerHTML = `<p>Khodam untuk <strong>${nama}</strong>: <strong>${khodam}</strong></p>`;
+      hasilCek.innerHTML = `<p>Khodam untuk <strong>${nama}</strong> =  <strong>${khodam}</strong></p>`;
   
       // Kosongkan input nama
       namaInput.value = '';
